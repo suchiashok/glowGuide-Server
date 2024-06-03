@@ -20,9 +20,9 @@ const postProduct = async (req, res) => {
   }
 
   try {
-    const [id] = await knex("products").insert(req.body);
+    const [productId] = await knex("products").insert(req.body);
     const newProductItem = await knex("products")
-      .where("id", id)
+      .where("id", productId)
       .first()
       .select("id", "product_name", "category", "brand", "description");
     return res.status(201).json(newProductItem);
@@ -31,6 +31,60 @@ const postProduct = async (req, res) => {
   }
 };
 
+const getProduct = async (req, res) => {
+  const { productId } = req.params;
+  try {
+    const data = await knex("products")
+      .where("products.id", productId)
+      .select("id", "product_name", "brand", "category", "description");
+    if (!data.length) {
+      res.sendStatus(404);
+    } else {
+      res.status(200).json(data[0]);
+    }
+  } catch (error) {
+    res.status(500).send(`Error retrieving product details`, error);
+  }
+};
+
+const getAllProducts = async (req, res) => {
+  try {
+    const data = await knex("products").select(
+      "product_name",
+      "category",
+      "brand",
+      "description"
+    );
+    res.status(200).json(data);
+  } catch (error) {
+    res.status(500).send(`Error retrieving all the products`, error);
+  }
+};
+
+const getProductsByCategory = async (req,res) => {
+  const { category } = req.params;
+  console.log(`Category: ${category}`);
+  try {
+    const data = await knex("products")
+    .where("category", category)
+    .select(
+      "product_name",
+      "category",
+      "brand",
+      "description"
+    );
+    if(!data.length) {
+      return res.status(404).json({ message: "No products found for this category" });
+    }
+    res.status(200).json(data);
+  } catch (error) {
+    res.status(500).send(`Error retrieving products for category ${category}`, error)
+  }
+}
+
 module.exports = {
   postProduct,
+  getProduct,
+  getAllProducts,
+  getProductsByCategory,
 };
