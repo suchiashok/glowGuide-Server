@@ -50,6 +50,7 @@ const getProduct = async (req, res) => {
 const getAllProducts = async (req, res) => {
   try {
     const data = await knex("products").select(
+      "id",
       "product_name",
       "category",
       "brand",
@@ -68,6 +69,7 @@ const getProductsByCategory = async (req,res) => {
     const data = await knex("products")
     .where("category", category)
     .select(
+      "id",
       "product_name",
       "category",
       "brand",
