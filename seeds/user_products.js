@@ -8,7 +8,6 @@ exports.seed = async function (knex) {
     {
       id: 1,
       product_id: 2,
-      season_id: 2,
       open_date: "10/12/2023",
       expiration_months: "6",
     },
