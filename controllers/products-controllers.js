@@ -36,7 +36,19 @@ const getProduct = async (req, res) => {
   try {
     const data = await knex("products")
       .where("products.id", productId)
-      .select("id", "product_name", "brand", "category", "description");
+      .select(
+        "id",
+        "product_name",
+        "brand",
+        "category",
+        "description",
+        "size_small",
+        "size_medium",
+        "size_large",
+        "size_standard",
+        "brand_link",
+        "sephora"
+      );
     if (!data.length) {
       res.sendStatus(404);
     } else {
@@ -54,7 +66,13 @@ const getAllProducts = async (req, res) => {
       "product_name",
       "category",
       "brand",
-      "description"
+      "description",
+      "size_small",
+      "size_medium",
+      "size_large",
+      "size_standard",
+      "brand_link",
+      "sephora"
     );
     res.status(200).json(data);
   } catch (error) {
@@ -62,27 +80,37 @@ const getAllProducts = async (req, res) => {
   }
 };
 
-const getProductsByCategory = async (req,res) => {
+const getProductsByCategory = async (req, res) => {
   const { category } = req.params;
   console.log(`Category: ${category}`);
   try {
     const data = await knex("products")
-    .where("category", category)
-    .select(
-      "id",
-      "product_name",
-      "category",
-      "brand",
-      "description"
-    );
-    if(!data.length) {
-      return res.status(404).json({ message: "No products found for this category" });
+      .where("category", category)
+      .select(
+        "id",
+        "product_name",
+        "category",
+        "brand",
+        "description",
+        "size_small",
+        "size_medium",
+        "size_large",
+        "size_standard",
+        "brand_link",
+        "sephora"
+      );
+    if (!data.length) {
+      return res
+        .status(404)
+        .json({ message: "No products found for this category" });
     }
     res.status(200).json(data);
   } catch (error) {
-    res.status(500).send(`Error retrieving products for category ${category}`, error)
+    res
+      .status(500)
+      .send(`Error retrieving products for category ${category}`, error);
   }
-}
+};
 
 module.exports = {
   postProduct,

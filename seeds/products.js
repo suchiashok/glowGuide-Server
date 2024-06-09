@@ -12,15 +12,11 @@ exports.seed = async function (knex) {
       brand: "Neutrogena",
       description:
         "Lightweight, non-greasy moisturizer that hydrates and smooths skin.",
-      sizes: {
-        small: "50ml",
-        medium: "100ml",
-        large: "200ml",
-      },
-      links: {
-        brand: "https://www.neutrogena.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "50ml",
+      size_medium: "100ml",
+      size_large: "200ml",
+      brand_link: "https://www.neutrogena.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 2,
@@ -28,15 +24,11 @@ exports.seed = async function (knex) {
       category: "Moisturizer",
       brand: "Kiehl's",
       description: "24-hour daily facial cream for all skin types.",
-      sizes: {
-        small: "30ml",
-        medium: "50ml",
-        large: "100ml",
-      },
-      links: {
-        brand: "https://www.kiehls.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "30ml",
+      size_medium: "50ml",
+      size_large: "100ml",
+      brand_link: "https://www.kiehls.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 3,
@@ -45,15 +37,11 @@ exports.seed = async function (knex) {
       brand: "CeraVe",
       description:
         "Rich, non-greasy, fast-absorbing, and suitable for dry skin.",
-      sizes: {
-        small: "50ml",
-        medium: "100ml",
-        large: "200ml",
-      },
-      links: {
-        brand: "https://www.cerave.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "50ml",
+      size_medium: "100ml",
+      size_large: "200ml",
+      brand_link: "https://www.cerave.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 4,
@@ -62,15 +50,11 @@ exports.seed = async function (knex) {
       brand: "Sunday Riley",
       description:
         "Brightening, refining treatment that delivers intense hydration.",
-      sizes: {
-        small: "30ml",
-        medium: "50ml",
-        large: "100ml",
-      },
-      links: {
-        brand: "https://www.sundayriley.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "30ml",
+      size_medium: "50ml",
+      size_large: "100ml",
+      brand_link: "https://www.sundayriley.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 5,
@@ -79,15 +63,11 @@ exports.seed = async function (knex) {
       brand: "Clinique",
       description:
         "Gel-cream that keeps skin almost twice as hydrated at the end of the day.",
-      sizes: {
-        small: "30ml",
-        medium: "50ml",
-        large: "100ml",
-      },
-      links: {
-        brand: "https://www.clinique.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "30ml",
+      size_medium: "50ml",
+      size_large: "100ml",
+      brand_link: "https://www.clinique.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 6,
@@ -95,15 +75,11 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "Lancôme",
       description: "Anti-aging serum for glowing, younger-looking skin.",
-      sizes: {
-        small: "30ml",
-        medium: "50ml",
-        large: "100ml",
-      },
-      links: {
-        brand: "https://www.lancome-usa.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "30ml",
+      size_medium: "50ml",
+      size_large: "100ml",
+      brand_link: "https://www.lancome-usa.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 7,
@@ -111,15 +87,11 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "SkinCeuticals",
       description: "Vitamin C serum that provides environmental protection.",
-      sizes: {
-        small: "15ml",
-        medium: "30ml",
-        large: "50ml",
-      },
-      links: {
-        brand: "https://www.skinceuticals.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "15ml",
+      size_medium: "30ml",
+      size_large: "50ml",
+      brand_link: "https://www.skinceuticals.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 8,
@@ -127,15 +99,11 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "Ole Henriksen",
       description: "Collagen-boosted with True-C Complex to brighten and firm.",
-      sizes: {
-        small: "30ml",
-        medium: "50ml",
-        large: "100ml",
-      },
-      links: {
-        brand: "https://www.olehenriksen.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "30ml",
+      size_medium: "50ml",
+      size_large: "100ml",
+      brand_link: "https://www.olehenriksen.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 9,
@@ -143,15 +111,11 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "The Ordinary",
       description: "Hydrating formula with ultra-pure, vegan hyaluronic acid.",
-      sizes: {
-        small: "30ml",
-        medium: "60ml",
-        large: "100ml",
-      },
-      links: {
-        brand: "https://www.theordinary.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "30ml",
+      size_medium: "60ml",
+      size_large: "100ml",
+      brand_link: "https://www.theordinary.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 10,
@@ -160,15 +124,11 @@ exports.seed = async function (knex) {
       brand: "Clarins",
       description:
         "A two-in-one formula that visibly firms, smooths, and boosts radiance.",
-      sizes: {
-        small: "30ml",
-        medium: "50ml",
-        large: "100ml",
-      },
-      links: {
-        brand: "https://www.clarins.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "30ml",
+      size_medium: "50ml",
+      size_large: "100ml",
+      brand_link: "https://www.clarins.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 11,
@@ -176,15 +136,11 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "EltaMD",
       description: "Oil-free sunscreen that calms and protects sensitive skin.",
-      sizes: {
-        small: "1.7oz",
-        medium: "3oz",
-        large: "4oz",
-      },
-      links: {
-        brand: "https://www.eltamd.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "1.7oz",
+      size_medium: "3oz",
+      size_large: "4oz",
+      brand_link: "https://www.eltamd.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 12,
@@ -192,15 +148,11 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "La Roche-Posay",
       description: "Sunscreen for face and body, sensitive skin formula.",
-      sizes: {
-        small: "3oz",
-        medium: "5oz",
-        large: "8oz",
-      },
-      links: {
-        brand: "https://www.laroche-posay.us/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "3oz",
+      size_medium: "5oz",
+      size_large: "8oz",
+      brand_link: "https://www.laroche-posay.us/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 13,
@@ -209,15 +161,11 @@ exports.seed = async function (knex) {
       brand: "Supergoop!",
       description:
         "Weightless, invisible, scent-free, and makeup-gripping daily primer.",
-      sizes: {
-        small: "0.5oz",
-        medium: "1.7oz",
-        large: "2.0oz",
-      },
-      links: {
-        brand: "https://supergoop.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "0.5oz",
+      size_medium: "1.7oz",
+      size_large: "2.0oz",
+      brand_link: "https://supergoop.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 14,
@@ -225,15 +173,11 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Neutrogena",
       description: "Protects skin from sunburn without causing breakouts.",
-      sizes: {
-        small: "3oz",
-        medium: "5oz",
-        large: "8oz",
-      },
-      links: {
-        brand: "https://www.neutrogena.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "3oz",
+      size_medium: "5oz",
+      size_large: "8oz",
+      brand_link: "https://www.neutrogena.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 15,
@@ -241,15 +185,11 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Etude House",
       description: "Lightweight, fast-absorbing sunscreen with a matte finish.",
-      sizes: {
-        small: "1.6oz",
-        medium: "3.4oz",
-        large: "5oz",
-      },
-      links: {
-        brand: "https://www.etudehouse.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "1.6oz",
+      size_medium: "3.4oz",
+      size_large: "5oz",
+      brand_link: "https://www.etudehouse.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 16,
@@ -258,15 +198,11 @@ exports.seed = async function (knex) {
       brand: "Pixi",
       description:
         "Exfoliating toner that helps to firm and tighten normal to dry, dull skin.",
-      sizes: {
-        small: "3.4oz",
-        medium: "8.5oz",
-        large: "16.9oz",
-      },
-      links: {
-        brand: "https://www.pixibeauty.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "3.4oz",
+      size_medium: "8.5oz",
+      size_large: "16.9oz",
+      brand_link: "https://www.pixibeauty.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 17,
@@ -274,15 +210,11 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Thayers",
       description: "Gentle toner derived from a time-honored formula.",
-      sizes: {
-        small: "3oz",
-        medium: "8oz",
-        large: "12oz",
-      },
-      links: {
-        brand: "https://www.thayers.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "3oz",
+      size_medium: "8oz",
+      size_large: "12oz",
+      brand_link: "https://www.thayers.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 18,
@@ -291,15 +223,11 @@ exports.seed = async function (knex) {
       brand: "Paula's Choice",
       description:
         "Minimizes pores and reduces oiliness with a gentle, alcohol-free formula.",
-      sizes: {
-        small: "4oz",
-        medium: "6.4oz",
-        large: "10oz",
-      },
-      links: {
-        brand: "https://www.paulaschoice.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "4oz",
+      size_medium: "6.4oz",
+      size_large: "10oz",
+      brand_link: "https://www.paulaschoice.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 19,
@@ -307,15 +235,11 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Nature Republic",
       description: "Hydrating and soothing toner with aloe vera extract.",
-      sizes: {
-        small: "5.07oz",
-        medium: "10.14oz",
-        large: "16.9oz",
-      },
-      links: {
-        brand: "https://www.naturerepublicusa.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "5.07oz",
+      size_medium: "10.14oz",
+      size_large: "16.9oz",
+      brand_link: "https://www.naturerepublicusa.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 20,
@@ -323,15 +247,11 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Kiehl's",
       description: "Alcohol-free toner for normal to oily skin types.",
-      sizes: {
-        small: "4.2oz",
-        medium: "8.4oz",
-        large: "16.9oz",
-      },
-      links: {
-        brand: "https://www.kiehls.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "4.2oz",
+      size_medium: "8.4oz",
+      size_large: "16.9oz",
+      brand_link: "https://www.kiehls.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 21,
@@ -340,15 +260,11 @@ exports.seed = async function (knex) {
       brand: "Clinique",
       description:
         "Daily moisture developed by dermatologists to maintain optimal moisture balance.",
-      sizes: {
-        small: "1oz",
-        medium: "1.7oz",
-        large: "4.2oz",
-      },
-      links: {
-        brand: "https://www.clinique.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "1oz",
+      size_medium: "1.7oz",
+      size_large: "4.2oz",
+      brand_link: "https://www.clinique.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 22,
@@ -357,15 +273,11 @@ exports.seed = async function (knex) {
       brand: "La Roche-Posay",
       description:
         "Replenishes moisture for up to 48-hour hydration and helps restore the skin barrier.",
-      sizes: {
-        small: "1oz",
-        medium: "2.5oz",
-        large: "4.2oz",
-      },
-      links: {
-        brand: "https://www.laroche-posay.us/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "1oz",
+      size_medium: "2.5oz",
+      size_large: "4.2oz",
+      brand_link: "https://www.laroche-posay.us/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 23,
@@ -374,15 +286,11 @@ exports.seed = async function (knex) {
       brand: "Peter Thomas Roth",
       description:
         "Rich, hydrating cream that reduces the appearance of fine lines and wrinkles.",
-      sizes: {
-        small: "0.67oz",
-        medium: "1.7oz",
-        large: "3.4oz",
-      },
-      links: {
-        brand: "https://www.peterthomasroth.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "0.67oz",
+      size_medium: "1.7oz",
+      size_large: "3.4oz",
+      brand_link: "https://www.peterthomasroth.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 24,
@@ -391,15 +299,11 @@ exports.seed = async function (knex) {
       brand: "Belif",
       description:
         "Ultra-lightweight, oil-free gel-cream that instantly cools and refreshes skin.",
-      sizes: {
-        small: "0.84oz",
-        medium: "1.68oz",
-        large: "3.38oz",
-      },
-      links: {
-        brand: "https://www.belifusa.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "0.84oz",
+      size_medium: "1.68oz",
+      size_large: "3.38oz",
+      brand_link: "https://www.belifusa.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 25,
@@ -407,15 +311,11 @@ exports.seed = async function (knex) {
       category: "Moisturizer",
       brand: "First Aid Beauty",
       description: "Intense hydration for dry, distressed skin and eczema.",
-      sizes: {
-        small: "2oz",
-        medium: "6oz",
-        large: "8oz",
-      },
-      links: {
-        brand: "https://www.firstaidbeauty.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "2oz",
+      size_medium: "6oz",
+      size_large: "8oz",
+      brand_link: "https://www.firstaidbeauty.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 26,
@@ -423,15 +323,11 @@ exports.seed = async function (knex) {
       category: "Moisturizer",
       brand: "Dr. Jart+",
       description: "Deep moisturizing cream for dry and rough skin.",
-      sizes: {
-        small: "0.67oz",
-        medium: "1.69oz",
-        large: "3.38oz",
-      },
-      links: {
-        brand: "https://www.drjart.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "0.67oz",
+      size_medium: "1.69oz",
+      size_large: "3.38oz",
+      brand_link: "https://www.drjart.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 27,
@@ -440,15 +336,11 @@ exports.seed = async function (knex) {
       brand: "Youth To The People",
       description:
         "Adaptogen-rich hydrating cream to combat dryness and redness.",
-      sizes: {
-        small: "0.25oz",
-        medium: "2oz",
-        large: "4oz",
-      },
-      links: {
-        brand: "https://www.youthtothepeople.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "0.25oz",
+      size_medium: "2oz",
+      size_large: "4oz",
+      brand_link: "https://www.youthtothepeople.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 28,
@@ -457,15 +349,11 @@ exports.seed = async function (knex) {
       brand: "Fresh",
       description:
         "Hydrating moisturizer infused with time-release hydro-patches.",
-      sizes: {
-        small: "0.24oz",
-        medium: "1oz",
-        large: "1.6oz",
-      },
-      links: {
-        brand: "https://www.fresh.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "0.24oz",
+      size_medium: "1oz",
+      size_large: "1.6oz",
+      brand_link: "https://www.fresh.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 29,
@@ -474,15 +362,11 @@ exports.seed = async function (knex) {
       brand: "Charlotte Tilbury",
       description:
         "Anti-aging moisturizer to transform the appearance of tired, dull skin.",
-      sizes: {
-        small: "0.52oz",
-        medium: "1.01oz",
-        large: "1.69oz",
-      },
-      links: {
-        brand: "https://www.charlottetilbury.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "0.52oz",
+      size_medium: "1.01oz",
+      size_large: "1.69oz",
+      brand_link: "https://www.charlottetilbury.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 30,
@@ -491,15 +375,11 @@ exports.seed = async function (knex) {
       brand: "Weleda",
       description:
         "Deeply nourishing and intensely hydrating cream for dry, rough skin.",
-      sizes: {
-        small: "1oz",
-        medium: "2.5oz",
-        large: "4.5oz",
-      },
-      links: {
-        brand: "https://www.weleda.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_small: "1oz",
+      size_medium: "2.5oz",
+      size_large: "4.5oz",
+      brand_link: "https://www.weleda.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 31,
@@ -507,13 +387,9 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "The Ordinary",
       description: "High-strength vitamin and mineral blemish formula.",
-      sizes: {
-        standard: "1oz",
-      },
-      links: {
-        brand: "https://theordinary.deciem.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1oz",
+      brand_link: "https://theordinary.deciem.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 32,
@@ -522,13 +398,9 @@ exports.seed = async function (knex) {
       brand: "Estee Lauder",
       description:
         "Synchronized Recovery Complex II for radiant, youthful-looking skin.",
-      sizes: {
-        standard: "1.7oz",
-      },
-      links: {
-        brand: "https://www.esteelauder.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1.7oz",
+      brand_link: "https://www.esteelauder.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 33,
@@ -536,13 +408,9 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "L'Oréal Paris",
       description: "Instantly hydrates and visibly plumps skin.",
-      sizes: {
-        standard: "1oz",
-      },
-      links: {
-        brand: "https://www.lorealparisusa.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1oz",
+      brand_link: "https://www.lorealparisusa.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 34,
@@ -551,13 +419,9 @@ exports.seed = async function (knex) {
       brand: "Drunk Elephant",
       description:
         "Potent antioxidant complex, enzyme, and essential nutrients.",
-      sizes: {
-        standard: "1oz",
-      },
-      links: {
-        brand: "https://www.drunkelephant.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1oz",
+      brand_link: "https://www.drunkelephant.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 35,
@@ -565,13 +429,9 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "Olay",
       description: "Anti-aging serum with advanced amino-peptide complex.",
-      sizes: {
-        standard: "1.7oz",
-      },
-      links: {
-        brand: "https://www.olay.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1.7oz",
+      brand_link: "https://www.olay.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 36,
@@ -579,13 +439,9 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "Vichy",
       description: "Fortifying and plumping daily booster.",
-      sizes: {
-        standard: "1.69oz",
-      },
-      links: {
-        brand: "https://www.vichyusa.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1.69oz",
+      brand_link: "https://www.vichyusa.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 37,
@@ -593,13 +449,9 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "Caudalie",
       description: "Complexion correcting, brightening serum.",
-      sizes: {
-        standard: "1oz",
-      },
-      links: {
-        brand: "https://us.caudalie.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1oz",
+      brand_link: "https://us.caudalie.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 38,
@@ -607,13 +459,9 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "Kiehl's",
       description: "Visibly reduces dark spots and discolorations.",
-      sizes: {
-        standard: "1oz",
-      },
-      links: {
-        brand: "https://www.kiehls.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1oz",
+      brand_link: "https://www.kiehls.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 39,
@@ -621,13 +469,9 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "Murad",
       description: "Targeted skin lightening treatment.",
-      sizes: {
-        standard: "1oz",
-      },
-      links: {
-        brand: "https://www.murad.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1oz",
+      brand_link: "https://www.murad.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 40,
@@ -635,13 +479,9 @@ exports.seed = async function (knex) {
       category: "Serum",
       brand: "The Inkey List",
       description: "Hydrating serum with hyaluronic acid.",
-      sizes: {
-        standard: "1oz",
-      },
-      links: {
-        brand: "https://www.theinkeylist.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1oz",
+      brand_link: "https://www.theinkeylist.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 41,
@@ -649,13 +489,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Neutrogena",
       description: "Water gel lotion with SPF 30, hydrates and protects skin.",
-      sizes: {
-        standard: "3oz",
-      },
-      links: {
-        brand: "https://www.neutrogena.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "3oz",
+      brand_link: "https://www.neutrogena.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 42,
@@ -663,13 +499,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Aveeno",
       description: "Oil-free sunscreen with SPF 50 for face.",
-      sizes: {
-        standard: "3oz",
-      },
-      links: {
-        brand: "https://www.aveeno.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "3oz",
+      brand_link: "https://www.aveeno.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 43,
@@ -677,13 +509,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Blue Lizard",
       description: "Mineral sunscreen with SPF 30+ for sensitive skin.",
-      sizes: {
-        standard: "5oz",
-      },
-      links: {
-        brand: "https://www.bluelizard.net/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "5oz",
+      brand_link: "https://www.bluelizard.net/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 44,
@@ -691,13 +519,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Coppertone",
       description: "Hypoallergenic sunscreen with SPF 50.",
-      sizes: {
-        standard: "6oz",
-      },
-      links: {
-        brand: "https://www.coppertone.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "6oz",
+      brand_link: "https://www.coppertone.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 45,
@@ -705,13 +529,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Banana Boat",
       description: "High-performance sunscreen with SPF 50.",
-      sizes: {
-        standard: "8oz",
-      },
-      links: {
-        brand: "https://www.bananaboat.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "8oz",
+      brand_link: "https://www.bananaboat.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 46,
@@ -719,13 +539,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Alba Botanica",
       description: "Natural, botanical-based sunscreen with SPF 45.",
-      sizes: {
-        standard: "4oz",
-      },
-      links: {
-        brand: "https://www.albabotanica.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "4oz",
+      brand_link: "https://www.albabotanica.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 47,
@@ -734,13 +550,9 @@ exports.seed = async function (knex) {
       brand: "Hawaiian Tropic",
       description:
         "Lightweight sunscreen with SPF 30 and skin-nourishing antioxidants.",
-      sizes: {
-        standard: "8oz",
-      },
-      links: {
-        brand: "https://www.hawaiiantropic.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "8oz",
+      brand_link: "https://www.hawaiiantropic.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 48,
@@ -748,13 +560,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Coola",
       description: "Organic face sunscreen with SPF 30.",
-      sizes: {
-        standard: "1.7oz",
-      },
-      links: {
-        brand: "https://coola.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1.7oz",
+      brand_link: "https://coola.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 49,
@@ -762,13 +570,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Shiseido",
       description: "Water-resistant sunscreen with SPF 50+.",
-      sizes: {
-        standard: "3.3oz",
-      },
-      links: {
-        brand: "https://www.shiseido.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "3.3oz",
+      brand_link: "https://www.shiseido.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 50,
@@ -776,13 +580,9 @@ exports.seed = async function (knex) {
       category: "Sunscreen",
       brand: "Biore",
       description: "Lightweight, water-based sunscreen with SPF 50+.",
-      sizes: {
-        standard: "1.7oz",
-      },
-      links: {
-        brand: "https://www.biore.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "1.7oz",
+      brand_link: "https://www.biore.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 51,
@@ -790,13 +590,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Innisfree",
       description: "Hydrating toner formulated with green tea extract.",
-      sizes: {
-        standard: "6.76oz",
-      },
-      links: {
-        brand: "https://us.innisfree.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "6.76oz",
+      brand_link: "https://us.innisfree.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 52,
@@ -804,13 +600,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Klairs",
       description: "Calming and hydrating toner for sensitive skin.",
-      sizes: {
-        standard: "6.08oz",
-      },
-      links: {
-        brand: "https://www.klairscosmetics.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "6.08oz",
+      brand_link: "https://www.klairscosmetics.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 53,
@@ -818,13 +610,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Mario Badescu",
       description: "Glycolic acid-based toner to rejuvenate skin.",
-      sizes: {
-        standard: "8oz",
-      },
-      links: {
-        brand: "https://www.mariobadescu.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "8oz",
+      brand_link: "https://www.mariobadescu.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 54,
@@ -832,13 +620,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Thayers",
       description: "Alcohol-free toner with witch hazel and aloe vera.",
-      sizes: {
-        standard: "12oz",
-      },
-      links: {
-        brand: "https://www.thayers.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "12oz",
+      brand_link: "https://www.thayers.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 55,
@@ -846,13 +630,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Pixi",
       description: "Exfoliating toner with glycolic acid to brighten skin.",
-      sizes: {
-        standard: "3.4oz",
-      },
-      links: {
-        brand: "https://www.pixibeauty.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "3.4oz",
+      brand_link: "https://www.pixibeauty.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 56,
@@ -861,13 +641,9 @@ exports.seed = async function (knex) {
       brand: "The Ordinary",
       description:
         "Exfoliating toner with glycolic acid for improved skin clarity.",
-      sizes: {
-        standard: "8oz",
-      },
-      links: {
-        brand: "https://theordinary.deciem.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "8oz",
+      brand_link: "https://theordinary.deciem.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 57,
@@ -875,13 +651,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Fresh",
       description: "Hydrating toner with rose water and hyaluronic acid.",
-      sizes: {
-        standard: "8.4oz",
-      },
-      links: {
-        brand: "https://www.fresh.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "8.4oz",
+      brand_link: "https://www.fresh.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 58,
@@ -889,13 +661,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Paula's Choice",
       description: "Balances oily skin and minimizes pores.",
-      sizes: {
-        standard: "6.4oz",
-      },
-      links: {
-        brand: "https://www.paulaschoice.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "6.4oz",
+      brand_link: "https://www.paulaschoice.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 59,
@@ -903,13 +671,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Kiehl's",
       description: "Soothing, alcohol-free toner with calendula.",
-      sizes: {
-        standard: "8.4oz",
-      },
-      links: {
-        brand: "https://www.kiehls.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "8.4oz",
+      brand_link: "https://www.kiehls.com/",
+      sephora: "https://www.sephora.com/",
     },
     {
       id: 60,
@@ -917,13 +681,9 @@ exports.seed = async function (knex) {
       category: "Toner",
       brand: "Laneige",
       description: "Hydrating toner to boost moisture levels.",
-      sizes: {
-        standard: "6.7oz",
-      },
-      links: {
-        brand: "https://us.laneige.com/",
-        sephora: "https://www.sephora.com/",
-      },
+      size_standard: "6.7oz",
+      brand_link: "https://us.laneige.com/",
+      sephora: "https://www.sephora.com/",
     },
   ]);
 };
