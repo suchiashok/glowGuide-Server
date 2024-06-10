@@ -11,6 +11,7 @@ const getUserProducts = async (req, res) => {
         "products.id as product_id",
         "products.product_name as product_name",
         "products.brand as product_brand",
+        "products.category as product_category",
         "products.description as product_description"
       );
     res.status(200).json(data);
