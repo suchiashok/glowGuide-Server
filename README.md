@@ -67,3 +67,42 @@ The database consists of the following tables:
 - `expiration_months`
 - `created_at`
 - `updated_at`
+
+## API Endpoints
+
+The server provides the following API endpoints:
+
+### Products
+
+- **GET /products**
+  - Fetches all skincare products.
+  ```json
+  [
+    {
+        "id": 1,
+        "product_name": "HydraBoost Water Gel",
+        "category": "Moisturizer",
+        "brand": "Neutrogena",
+        "description": "Lightweight, non-greasy moisturizer that hydrates and smooths skin.",
+        "size_small": "50ml",
+        "size_medium": "100ml",
+        "size_large": "200ml",
+        "size_standard": null,
+        "brand_link": "https://www.neutrogena.com/",
+        "sephora": "https://www.sephora.com/"
+    },
+    {
+        "id": 2,
+        "product_name": "Ultra Facial Cream",
+        "category": "Moisturizer",
+        "brand": "Kiehl's",
+        "description": "24-hour daily facial cream for all skin types.",
+        "size_small": "30ml",
+        "size_medium": "50ml",
+        "size_large": "100ml",
+        "size_standard": null,
+        "brand_link": "https://www.kiehls.com/",
+        "sephora": "https://www.sephora.com/"
+    }
+  ]
+  ```
