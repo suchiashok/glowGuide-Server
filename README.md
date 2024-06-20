@@ -87,7 +87,7 @@ The server provides the following API endpoints:
 
 - **GET /products**
   - Fetches all skincare products.
-  ```json-light
+  ```json
   [
     {
       "id": 1,
@@ -117,3 +117,40 @@ The server provides the following API endpoints:
     }
   ]
   ```
+  - **POST /products**
+    - Adds a new product.
+    ```json
+    {
+        "id": 3,
+        "product_name": "CeraVe Moisturizing Cream",
+        "category": "Moisturizer",
+        "brand": "CeraVe",
+        "description": "Rich, non-greasy, fast-absorbing, and suitable for dry skin.",
+        "size_small": "50ml",
+        "size_medium": "100ml",
+        "size_large": "200ml",
+        "size_standard": null,
+        "brand_link": "https://www.cerave.com/",
+        "sephora": "https://www.sephora.com/"
+    }
+    ```
+  - **GET /products/:productId**
+    - Fetches a single product by ID.
+    ```json
+    {
+    "id": 4,
+    "product_name": "Tidal Brightening Enzyme Water Cream",
+    "brand": "Sunday Riley",
+    "category": "Moisturizer",
+    "description": "Brightening, refining treatment that delivers intense hydration.",
+    "size_small": "30ml",
+    "size_medium": "50ml",
+    "size_large": "100ml",
+    "size_standard": null,
+    "brand_link": "https://www.sundayriley.com/",
+    "sephora": "https://www.sephora.com/"
+    }
+    ```
+
+
+
