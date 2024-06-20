@@ -21,14 +21,49 @@ The Glow Guide server manages data for skincare products and user collections, p
    git clone https://github.com/suchiashok/glowGuide-Server.git
    cd glowGuide-Server
 
-2. **Install Dependencies 
+2. **Install Dependencies**
     ```bash
     npm install
 
-3. **Configure environment variables 
+3. **Configure environment variables**
 Create a .env file in the root directory and add your database configuration and other environment variables:
     ```env
     DB_HOST=your-database-host
     DB_USER=your-database-username
     DB_PASS=your-database-password
     DB_NAME=your-database-name
+
+4. **Run Database Migrations**
+    ```bash 
+    npx knex migrate:latest
+
+5. **Start the Server**
+    ```bash
+    npm start
+
+## Database Schema
+
+The database consists of the following tables:
+
+### Products
+- `id` (Primary Key)
+- `product_name`
+- `category`
+- `brand`
+- `description`
+- `size_small`
+- `size_medium`
+- `size_large`
+- `size_standard`
+- `brand_link`
+- `sephora`
+- `created_at`
+- `updated_at`
+
+### User_Products
+- `id` (Primary Key)
+- `product_id` (Foreign Key)
+- `open_date`
+- `expiration_months`
+- `created_at`
+- `updated_at`
