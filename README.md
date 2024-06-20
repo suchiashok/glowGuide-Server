@@ -192,7 +192,7 @@ The server provides the following API endpoints:
     ]
     ```
 
-    ### User Products (user's collection)
+### User Products (user's collection)
 
 - **GET /userProducts**
   - Fetches all products belonging to the user.
