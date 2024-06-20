@@ -87,7 +87,7 @@ The server provides the following API endpoints:
 
 - **GET /products**
   - Fetches all skincare products.
-  ```json
+  ```json-light
   [
     {
       "id": 1,
