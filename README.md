@@ -123,7 +123,8 @@ The server provides the following API endpoints:
   ]
   ```
 
-  - **POST /products**
+- **POST /products**
+
     - Adds a new product.
     ```json
     {
@@ -140,7 +141,7 @@ The server provides the following API endpoints:
       "sephora": "https://www.sephora.com/"
     }
     ```
-  - **GET /products/:productId**
+- **GET /products/:productId**
     - Fetches a single product by ID.
     ```json
     {
@@ -157,7 +158,7 @@ The server provides the following API endpoints:
       "sephora": "https://www.sephora.com/"
     }
     ```
-  - **GET /products/category/:category**
+- **GET /products/category/:category**
 
     - Fetches products by category (e.g., moisturizer, sunscreen, etc.).
 
@@ -220,7 +221,7 @@ The server provides the following API endpoints:
     }
   ]
   ```
-  - **POST /userProducts**
+- **POST /userProducts**
   - Adds a new product belonging to the user.
   ```json
   {
